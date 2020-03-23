@@ -4,11 +4,11 @@ import logo from '../assets/logo.png';
 import styles from './LandingPage.module.css'
 import { SearchBar } from '../SearchBar/SearchBar';
 import { SearchSuggestions } from './SearchSuggestions/SearchSuggestions';
-import useReactReouter from 'use-react-router';
+import { useHistory } from 'react-router-dom'
 
 export function LandingPage() {
 
-    const { history } = useReactReouter();
+    const history = useHistory()
 
     function search(term, location) {
         const urlEncodedTerm = encodeURI(term);
