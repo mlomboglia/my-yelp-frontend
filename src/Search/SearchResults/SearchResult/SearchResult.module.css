@@ -5,8 +5,8 @@
 }
 
 .business-image {
-    width: 210;
-    height: 210;
+    width: 210px;
+    height: 210px;
     border-radius: 4px;
     margin-right: 1rem;
 }
@@ -19,3 +19,6 @@
     font-size: .85rem;
 }
 
+:global(.tag).business-tag {
+    margin-right: 4px;
+}
